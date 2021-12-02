@@ -1,0 +1,28 @@
+@import '../../globals/styling/variables.scss';
+
+.navigation-bar {
+  background-color: $dark-red;
+  &-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+    }
+    &-item {
+      padding: 1rem;
+      color: $white;
+      &:hover {
+        color: $default-color;
+      }
+    }
+  }
+  &-image {
+    align-self: center;
+    width: 2rem;
+    height: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
