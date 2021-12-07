@@ -1,0 +1,20 @@
+@import '../../globals/styling/variables.scss';
+
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &-input {
+    width: 20vw;
+  }
+
+  &-image {
+    background-color: $dark-red;
+    width: 3rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

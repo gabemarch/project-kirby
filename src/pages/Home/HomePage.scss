@@ -1,0 +1,23 @@
+@import "../../globals/styling/variables.scss";
+
+.home-page {
+  background-image: url("../../assets/images/background.jpg");
+  min-height: 100vh;
+
+  &-title {
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 6em;
+  }
+
+  &-description {
+    background: rgba(51,51,51, 0.5);
+    max-width: 15vw;
+    height: 15vh;
+    &-text {
+      padding: 1rem;
+      color: $white;
+    }
+  }
+}

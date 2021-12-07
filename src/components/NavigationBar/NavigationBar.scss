@@ -8,6 +8,7 @@
     justify-content: space-around;
     a {
       text-decoration: none;
+      align-self: center;
     }
     &-item {
       padding: 1rem;
@@ -18,7 +19,6 @@
     }
   }
   &-image {
-    align-self: center;
     width: 2rem;
     height: 2rem;
     &:hover {
