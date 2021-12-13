@@ -1,4 +1,4 @@
-@import '../../globals/styling/variables.scss';
+@import "../../globals/styling/variables.scss";
 
 .navigation-bar {
   background-color: $dark-red;
@@ -13,8 +13,10 @@
     &-item {
       padding: 1rem;
       color: $white;
+      font-weight: bold;
+      transition: 0.1s ease-in;
       &:hover {
-        color: $default-color;
+        color: $dirty-white;
       }
     }
   }

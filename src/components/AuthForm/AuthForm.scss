@@ -1,0 +1,65 @@
+@import "../../globals/styling/variables.scss";
+
+.register-form {
+  &-terms-and-conditions {
+    margin-top: 0.5rem;
+    align-content: center;
+    &-text {
+      padding-left: 0.3rem;
+    }
+  }
+
+  .auth-already-have-account {
+    margin-top: 0.5rem;
+    a {
+      padding-left: 0.3rem;
+    }
+  }
+}
+
+.login-form {
+  .dont-have-account {
+    margin-top: 0.5rem;
+    a {
+      padding-left: 0.3rem;
+    }
+  }
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  flex: 3;
+  width: 30vw;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.auth-title {
+  flex: 1;
+  font-size: 3em;
+}
+
+.auth-input {
+  width: 25vw;
+  height: 4vh;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.auth-submit {
+  width: 25vw;
+  height: 4vh;
+  margin-top: 0.5rem;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  background-color: $blue;
+  transition: 0.2s ease-in;
+
+  &:hover {
+    background-color: $dark-blue;
+    cursor: pointer;
+  }
+}

@@ -2,22 +2,25 @@
 
 .carousel {
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25vh;
   &-card {
-
     display: flex;
-    flex-direction: column;
     flex: 1;
-    background-color: $dark-red;
-    max-width: 25%;
-
+    flex-direction: column;
+    background-color: $white;
+    justify-content: space-between;
+    width: 20vw;
     &-name {
       font-size: 3em;
-      color: $white;
+      color: $default-color;
+      font-weight: bold;
     }
 
     &-image {
       align-self: center;
-      max-width: 25rem;
+      max-width: 20vw;
     }
     &-button {
       background-color: $blue;

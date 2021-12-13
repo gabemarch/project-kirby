@@ -1,14 +1,14 @@
 import './Carousel.scss'
 import placeholder from '../../assets/images/placeholder.jpg';
+import { Link } from 'react-router-dom';
 
-const Carousel = (props) => {
+const Carousel = ({name, imageUrl}) => {
   return (
   <div className="carousel">
-    <h3 className="carousel-title">{props.title || 'Default'}</h3>
     <div className="carousel-card">
-      <p className="carousel-card-name">{props.name || 'Default'}</p>
-      <img src={placeholder} alt="" className="carousel-card-image" />
-      <button className="carousel-card-button">See more</button>
+      <p className="carousel-card-name">{name || 'Default'}</p>
+      <img src={imageUrl ? imageUrl : placeholder} alt="" className="carousel-card-image" />
+      <Link to={`/comics-${name}`} ><button className="carousel-card-button">See more</button></Link>
     </div>
   </div>
   )

@@ -20,4 +20,9 @@
       color: $white;
     }
   }
+
+  .carousel-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
