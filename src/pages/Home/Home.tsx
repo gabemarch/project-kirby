@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Carousel from '../../components/Carousel';
+import HomeHeader from '../../components/HomeHeader';
 import SearchBar from '../../components/SearchBar';
-import Spinner from '../../components/Spinner';
 import './HomePage.scss';
 
 const Home = () => {
@@ -24,14 +24,14 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <h1 className="home-page-title">Project Kirby</h1>
+      <HomeHeader />
       <div className="home-page-description">
         <p className="home-page-description-text">Find your favorite comic books and graphic novels, review or share them and enjoy being part of the greatest community!</p>
       </div>
       <SearchBar />
       <div className="carousel-container">
-        {isLoading ? <Spinner /> : data.map((publisher) => (
-          <Carousel name={publisher.name} imageUrl={publisher.imageUrl} />
+        {data.map((publisher) => (
+          <Carousel name={publisher.name} imageUrl={publisher.imageUrl} isLoading={isLoading} />
         ))}
       </div>
     </div>

@@ -1,4 +1,4 @@
-@import '../../globals/styling/variables.scss';
+@import "../../globals/styling/variables.scss";
 
 .carousel {
   padding: 1rem;
@@ -27,7 +27,7 @@
       color: $white;
       border: none;
       padding: 1rem;
-      transition: .2s ease-in-out;
+      transition: 0.2s ease-in-out;
       &:hover {
         cursor: pointer;
         background-color: $dark-blue;

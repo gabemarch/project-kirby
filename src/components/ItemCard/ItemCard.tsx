@@ -1,5 +1,6 @@
 import "./ItemCard.scss";
 import { useAPIData } from "../../shared/context/apiContext";
+import { NavLink, Outlet } from "react-router-dom";
 
 const ItemCard = () => {
   const data = useAPIData();
@@ -13,7 +14,13 @@ const ItemCard = () => {
             alt=""
             className="item-card-image"
           />
-          <button className="item-card-button">See more</button>
+          <NavLink
+            to={`${comic.id}`}
+            state={{ comic }}
+          >
+            See more
+          </NavLink>
+          <Outlet />
         </div>
       ))}
     </>

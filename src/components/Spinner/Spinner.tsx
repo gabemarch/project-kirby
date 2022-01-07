@@ -1,7 +1,10 @@
+import PacmanLoader from "react-spinners/PacmanLoader";
+import './Spinner.scss';
+
 const Spinner = () => {
   return (
     <div className="spinner">
-      <h2>SPINNER YAY</h2>
+      <PacmanLoader color={'rgba(255,255,255, 0.7)'} />
     </div>
   )
 }

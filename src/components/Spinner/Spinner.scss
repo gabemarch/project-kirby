@@ -1,0 +1,9 @@
+@import '../../globals/styling/variables.scss';
+
+.spinner {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+}

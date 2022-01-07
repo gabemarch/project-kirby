@@ -1,0 +1,20 @@
+@import "../../globals/styling/variables.scss";
+
+.publisher-form {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+  }
+  input {
+    padding : .75rem;
+  }
+}
+
+.form-button {
+  color: $white;
+  background-color: $dark-blue;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
