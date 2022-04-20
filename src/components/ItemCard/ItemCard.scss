@@ -1,7 +1,14 @@
+.item-page {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .item-card {
   display: flex;
   flex-direction: column;
-  max-width: 25vw;
+  width: 25%;
   justify-content: center;
   &-image {
     width: 10rem;

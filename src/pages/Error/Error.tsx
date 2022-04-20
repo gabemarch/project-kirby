@@ -1,4 +1,4 @@
-import woah from '../../assets/images/woah.png';
+import woah from '../../..assets/images/woah.png';
 
 const Error = () => {
   return (

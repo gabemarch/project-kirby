@@ -1,9 +1,9 @@
 import './HomeHeader.scss';
 
-const HomeHeader = () =>{
+export const HomeHeader = () =>{
   return (
     <div className="home-header">
-
+      
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import Carousel from "../Carousel";
 
 const ItemView = () => {
   const { state } = useLocation()
@@ -15,6 +16,13 @@ const ItemView = () => {
       {comic.creators.items.map(creator => (
         <p>{creator.name}</p>
       ))}
+      <p>Characters: {comic.characters.items.map(character => <p>{character.name} </p>)}</p>
+      <div className="item-view-carousel">
+        <h1>Images</h1>
+        {comic.images.map(image => {
+          return <img src={`${image.path}.${image.extension}`} alt="" />
+        })}
+      </div>
     </div>
   ) : (
     <div className="error">ERROR</div>

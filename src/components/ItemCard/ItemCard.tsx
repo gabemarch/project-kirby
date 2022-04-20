@@ -5,7 +5,7 @@ import { NavLink, Outlet } from "react-router-dom";
 const ItemCard = () => {
   const data = useAPIData();
   return (
-    <>
+    <div className="item-page">
       {data.map((comic) => (
         <div className="item-card">
           <h3 className="item-card-title">{comic.title}</h3>
@@ -23,7 +23,7 @@ const ItemCard = () => {
           <Outlet />
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
