@@ -17,6 +17,7 @@ const ItemCard = () => {
           <NavLink
             to={`${comic.id}`}
             state={{ comic }}
+            className="item-card-cta"
           >
             See more
           </NavLink>

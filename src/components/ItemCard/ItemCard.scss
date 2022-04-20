@@ -1,3 +1,5 @@
+@import "../../globals/styling/variables.scss";
+
 .item-page {
   display: flex;
   width: 100%;
@@ -14,5 +16,9 @@
     width: 10rem;
     justify-content: center;
     margin: 0 auto;
+  }
+  &-cta {
+    background-color: $dark-blue;
+    justify-content: center;
   }
 }

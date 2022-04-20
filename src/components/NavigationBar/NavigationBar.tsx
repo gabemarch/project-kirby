@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./NavigationBar.scss";
 import user from "../../assets/images/user.svg";
 import { useState } from "react";
+import SearchBar from "@Components/SearchBar";
 
 const NavigationBar = () => {
 
@@ -13,7 +14,7 @@ const NavigationBar = () => {
   return (
     <div className="navigation-bar">
       <ul className="navigation-bar-list">
-        <li className="navigation-bar-list-item item-logo">Project Kirby</li>
+        <li className="navigation-bar-list-item item-logo">ComicGeek</li>
         <Link to="/">
           <li className="navigation-bar-list-item">Home</li>
         </Link>
@@ -26,6 +27,7 @@ const NavigationBar = () => {
         <Link to="/about">
           <li className="navigation-bar-list-item">About</li>
         </Link>
+        <li className="navigation-bar-list-item"><SearchBar /> </li>
         <Link to={setAuthRoute()}>
           <img src={user} alt="person" className="navigation-bar-image" />
         </Link>

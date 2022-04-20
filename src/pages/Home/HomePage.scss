@@ -1,7 +1,7 @@
 @import "../../globals/styling/variables.scss";
 
 .home-page {
-  background-image: url("../../assets/images/background.jpg");
+  background-color: $light-blue;
   min-height: 100vh;
 
   &-title {

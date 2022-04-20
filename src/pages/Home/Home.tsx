@@ -6,7 +6,7 @@ import SearchBar from "@Components/SearchBar";
 import "./HomePage.scss";
 
 const Home = () => {
-  const [publisherData, setPublisherData] = useState<any[]>([]);
+  const [publisherData, setPublisherData] = useState<any[]>(['Marvel', 'DC', 'Image Comics', 'IDW', 'Dark Horse', 'Vertigo']);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -31,7 +31,6 @@ const Home = () => {
           them and enjoy being part of the greatest community!
         </p>
       </div>
-      <SearchBar />
       <div className="carousel-container">
         {/* {publisherData ? (
           publisherData.map((publisher) => (

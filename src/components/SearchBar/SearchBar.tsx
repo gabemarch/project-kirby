@@ -1,11 +1,13 @@
 import './SearchBar.scss';
-import searchIcon from '../../assets/icons/magnifying-glass.svg';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 const SearchBar = () => {
   return (
     <div className="searchbar">
+      <div className="searchbar-icon">
+        <AiOutlineSearch />
+      </div>
       <input type="text" placeholder="Search..." className="searchbar-input" />
-      <img src={searchIcon} alt="" className="searchbar-image" />
     </div>
   )
 }

@@ -2,10 +2,12 @@
 
 .navigation-bar {
   background-color: $dark-red;
+  height: 10vh;
   &-list {
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    
     a {
       text-decoration: none;
       align-self: center;
