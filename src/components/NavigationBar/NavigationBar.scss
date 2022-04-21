@@ -7,7 +7,7 @@
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    
+
     a {
       text-decoration: none;
       align-self: center;
@@ -21,10 +21,10 @@
         color: $dirty-white;
       }
     }
-     .item-logo {
-      width: 10vw;
-      background-color: grey;
-      color: black;
+    .item-logo {
+      font-size: 2rem;
+      font-family: 'AntonRegular';
+      color: $white;
     }
   }
   &-image {

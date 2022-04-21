@@ -4,4 +4,22 @@
   width: 100vw;
   height: 40vh;
   background-color: $dark-blue;
+
+  &-title {
+    font-size: 4rem;
+    color: $white;
+    font-family: "AntonRegular";
+    text-align: center;
+  }
+
+  &-description {
+    width: 25vw;
+    height: 15vh;
+    margin: 0 auto;
+    &-text {
+      padding: 1rem;
+      color: $white;
+      text-align: center;
+    }
+  }
 }

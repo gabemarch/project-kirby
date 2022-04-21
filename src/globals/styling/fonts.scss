@@ -1,0 +1,21 @@
+@import '../../assets/fonts/Cabin-Bold.ttf';
+@import '../../assets/fonts/Anton-Regular.ttf';
+@import '../../assets/fonts/Cabin-Regular.ttf';
+
+@font-face {
+  font-family: "CabinBold";
+  src: local('Cabin-Bold'),
+  url('../../assets/fonts/Cabin-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "AntonRegular";
+  src: local('Anton-Regular'),
+  url('../../assets/fonts/Anton-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "CabinRegular";
+  src: local('Cabin-Regular'),
+  url('../../assets/fonts/Cabin-Regular.ttf') format("truetype");
+}

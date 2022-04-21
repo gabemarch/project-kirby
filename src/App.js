@@ -1,15 +1,15 @@
 import './App.scss';
 import ItemCard from './components/ItemCard';
-import Home from './pages/Home';
-import { LoginForm, RegisterForm } from "./components/AuthForm/AuthForm";
-import NavigationBar from './components/NavigationBar';
+import Home from '@Pages/Home';
+import { LoginForm, RegisterForm } from "@Components/AuthForm/AuthForm";
+import NavigationBar from '@Components/NavigationBar';
 import { APIProvider } from './shared/context/apiContext';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Profile from './pages/Profile';
-import Upload from './pages/Upload';
-import ItemView from './components/ItemView';
-import Footer from './components/Footer';
-import About from './pages/About';
+import Profile from '@Pages/Profile';
+import Upload from '@Pages/Upload';
+import ItemView from '@Components/ItemView';
+import Footer from '@Components/Footer';
+import About from '@Pages/About';
 
 function App(props) {
   return (

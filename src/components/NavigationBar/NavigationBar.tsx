@@ -14,7 +14,7 @@ const NavigationBar = () => {
   return (
     <div className="navigation-bar">
       <ul className="navigation-bar-list">
-        <li className="navigation-bar-list-item item-logo">ComicGeek</li>
+        <li className="navigation-bar-list-item item-logo">ComicVerse</li>
         <Link to="/">
           <li className="navigation-bar-list-item">Home</li>
         </Link>

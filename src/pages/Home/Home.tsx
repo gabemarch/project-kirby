@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Carousel from "@Components/Carousel";
 import HomeHeader from "@Components/HomeHeader";
-import SearchBar from "@Components/SearchBar";
+
 import "./HomePage.scss";
 
 const Home = () => {
@@ -25,12 +25,6 @@ const Home = () => {
   return (
     <div className="home-page">
       <HomeHeader />
-      <div className="home-page-description">
-        <p className="home-page-description-text">
-          Find your favorite comic books and graphic novels, review or share
-          them and enjoy being part of the greatest community!
-        </p>
-      </div>
       <div className="carousel-container">
         {/* {publisherData ? (
           publisherData.map((publisher) => (

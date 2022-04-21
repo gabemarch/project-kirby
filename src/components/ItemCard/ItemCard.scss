@@ -10,15 +10,35 @@
 .item-card {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 20%;
   justify-content: center;
+  
+  &-title {
+    text-align: center;
+    font-family: 'CabinBold';
+    padding: 1rem;
+  }
+
+  &-image-container {
+    margin: 0 auto;
+  }
+
   &-image {
     width: 10rem;
+    height: 25vh;
     justify-content: center;
     margin: 0 auto;
   }
-  &-cta {
-    background-color: $dark-blue;
-    justify-content: center;
+
+  &-button {
+    // justify-content: center;
+    align-self: center;
+
+    &-cta {
+      color: $white;
+      margin: 0 auto;
+      text-decoration: none;
+      width: 6vw;
+    }
   }
 }

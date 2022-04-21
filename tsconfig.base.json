@@ -24,6 +24,12 @@
     "paths": {
       "@Components/*": [
         "components/*"
+      ],
+      "@Fonts/*": [
+        "assets/fonts/*"
+      ],
+      "@Pages/*": [
+        "pages/*"
       ]
     }
   },
