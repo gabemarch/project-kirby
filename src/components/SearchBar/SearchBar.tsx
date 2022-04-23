@@ -1,15 +1,29 @@
 import './SearchBar.scss';
-import { AiOutlineSearch } from 'react-icons/ai';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Autocomplete from '@mui/material/Autocomplete';
 
 const SearchBar = () => {
   return (
-    <div className="searchbar">
-      <div className="searchbar-icon">
-        <AiOutlineSearch />
-      </div>
-      <input type="text" placeholder="Search..." className="searchbar-input" />
-    </div>
-  )
+    <Stack spacing={2} sx={{ width: 300 }}>
+      <Autocomplete
+        freeSolo
+        id="free-solo-2-demo"
+        disableClearable
+        options={[]}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            label="Search input"
+            InputProps={{
+              ...params.InputProps,
+              type: 'search',
+            }}
+          />
+        )}
+      />
+    </Stack>
+  );
 }
 
 export default SearchBar;

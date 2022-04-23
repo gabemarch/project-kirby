@@ -1,0 +1,19 @@
+@import "../../globals/styling/variables.scss";
+
+.publishers {
+  &-images {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    &-image {
+      width: 11rem;
+      padding: 1rem;
+    }
+    
+    .image-comics {
+      width: 5rem;
+    }
+  }
+}
