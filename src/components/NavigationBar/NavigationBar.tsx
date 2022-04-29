@@ -18,6 +18,9 @@ const NavigationBar = () => {
         <Link to="/">
           <li className="navigation-bar-list-item">Home</li>
         </Link>
+        <Link to="/new-releases">
+          <li className="navigation-bar-list-item">New Releases</li>
+        </Link>
         <Link to="/comics-marvel">
           <li className="navigation-bar-list-item">Comics</li>
         </Link>

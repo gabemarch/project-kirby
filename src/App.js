@@ -11,16 +11,17 @@ import Upload from "@Pages/Upload";
 import ItemView from "@Components/ItemView";
 import Footer from "@Components/Footer";
 import About from "@Pages/About";
+import NewReleases from "@Pages/NewReleases";
 
 function App(props) {
   return (
     <BrowserRouter>
       <APIProvider>
-        <ShortBoxedAPIProvider>
           <NavigationBar />
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="comics-marvel" element={<ItemCard />} />
+            <Route exact path="new-releases" element={<NewReleases />} />
             <Route path="comics-marvel/:id" element={<ItemView />} />
             <Route exact path="auth/register" element={<RegisterForm />} />
             <Route exact path="auth/login" element={<LoginForm />} />
@@ -29,7 +30,6 @@ function App(props) {
             <Route exact path="auth/upload" element={<Upload />} />
           </Routes>
           <Footer />
-        </ShortBoxedAPIProvider>
       </APIProvider>
     </BrowserRouter>
   );
