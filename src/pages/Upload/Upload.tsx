@@ -1,4 +1,4 @@
-import { UploadPublisherForm } from '../../components/Forms/Forms';
+import { UploadPublisherForm } from '@Components/Forms/Forms';
 const Upload = () => {
   return (
     <div className="upload-page">

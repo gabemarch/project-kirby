@@ -1,5 +1,6 @@
 import HomeHeader from "@Components/HomeHeader";
 import Publishers from "@Components/Publishers";
+import axios from "axios";
 
 import "./HomePage.scss";
 

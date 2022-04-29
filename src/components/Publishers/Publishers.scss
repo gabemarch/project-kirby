@@ -1,15 +1,20 @@
 @import "../../globals/styling/variables.scss";
+@import '../../globals/styling/mixins.scss';
 
 .publishers {
+  @include general-box-shadow;
   &-images {
     display: flex;
     justify-content: center;
     align-content: center;
     align-self: center;
     align-items: center;
+    background-color: $white;
+ 
     &-image {
       width: 11rem;
       padding: 1rem;
+      cursor: pointer;
     }
     
     .image-comics {
